@@ -1,4 +1,5 @@
-﻿using GUI.UserControls.ControlBar;
+﻿using GUI.Forms.AccountManagement;
+using GUI.UserControls.ControlBar;
 using GUI.Utilities;
 using System;
 using System.Collections.Generic;
@@ -23,14 +24,21 @@ namespace GUI
         private void ToggleDarkMode()
         {
             AppSettings.IsDarkMode = !AppSettings.IsDarkMode; // Đổi chế độ
-            AppSettings.ApplyTheme(this); // Cập nhật giao diện
+
+            // Cập nhật giao diện
+            AppSettings.ApplyTheme(this); 
+
             AppSettings.SaveSettings(); // Lưu cài đặt
+            CallDesignA();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ToggleDarkMode();
-            AppSettings.ApplyTheme(this);
+
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

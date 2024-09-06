@@ -17,8 +17,6 @@ namespace GUI.Forms
         public MessengerForm()
         {
             InitializeComponent();
-            AppSettings.LoadSettings(); // Tải cài đặt
-            AppSettings.ApplyTheme(this); // Áp dụng giao diện
         }
 
         private void ToggleDarkMode()

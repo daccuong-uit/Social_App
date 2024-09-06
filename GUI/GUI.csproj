@@ -52,6 +52,24 @@
     <Compile Include="Forms\AccountManagement\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AccountManagement\UForgotPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountManagement\UForgotPassword.Designer.cs">
+      <DependentUpon>UForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountManagement\ULogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountManagement\ULogin.Designer.cs">
+      <DependentUpon>ULogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccountManagement\URegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountManagement\URegister.Designer.cs">
+      <DependentUpon>URegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Facebooks\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +102,24 @@
     <Compile Include="UserControls\ControlBar\UControlBar.Designer.cs">
       <DependentUpon>UControlBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DesignControls\BorderCustome.cs" />
+    <Compile Include="UserControls\DesignControls\ButtonCustome.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utilities\AppSettings.cs" />
     <Compile Include="Utilities\Extensions.cs" />
     <Compile Include="Utilities\Helpers.cs" />
     <EmbeddedResource Include="Forms\AccountManagement\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountManagement\UForgotPassword.resx">
+      <DependentUpon>UForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountManagement\ULogin.resx">
+      <DependentUpon>ULogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountManagement\URegister.resx">
+      <DependentUpon>URegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Facebooks\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -159,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Images\x_24_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\eye_24_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\eye_open_24_black.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

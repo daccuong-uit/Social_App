@@ -1,13 +1,6 @@
 ﻿using GUI.Utilities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ColorPalette = GUI.Resources.Styles.ColorPalette;
 
@@ -18,6 +11,7 @@ namespace GUI.UserControls.ControlBar
         public event EventHandler btnCloseClicked;
         public event EventHandler btnMaximizeClicked;
         public event EventHandler btnMinimizeClicked;
+
         public UControlBar()
         {
             InitializeComponent();
@@ -45,32 +39,37 @@ namespace GUI.UserControls.ControlBar
             }
         }
 
-        #region
+        #region Event Handlers
         // Minimize
         private void picMinimize_Click(object sender, EventArgs e)
         {
             btnMinimizeClicked?.Invoke(this, EventArgs.Empty);
         }
+
         private void picMinimize_MouseEnter(object sender, EventArgs e)
         {
-
+            picMinimize.BackColor = Color.FromArgb(200, 200, 200); // Thay đổi màu nền khi chuột vào
         }
+
         private void picMinimize_MouseLeave(object sender, EventArgs e)
         {
-
+            picMinimize.BackColor = Color.Transparent; // Trở về màu nền ban đầu
         }
+
         // Maximize
         private void picMaximize_Click(object sender, EventArgs e)
         {
             btnMaximizeClicked?.Invoke(this, EventArgs.Empty);
         }
+
         private void picMaximize_MouseEnter(object sender, EventArgs e)
         {
-
+            picMaximize.BackColor = Color.FromArgb(200, 200, 200); // Thay đổi màu nền khi chuột vào
         }
+
         private void picMaximize_MouseLeave(object sender, EventArgs e)
         {
-
+            picMaximize.BackColor = Color.Transparent; // Trở về màu nền ban đầu
         }
 
         // Close
@@ -78,13 +77,15 @@ namespace GUI.UserControls.ControlBar
         {
             btnCloseClicked?.Invoke(this, EventArgs.Empty);
         }
+
         private void picClose_MouseEnter(object sender, EventArgs e)
         {
-
+            picClose.BackColor = Color.FromArgb(255, 100, 100); // Thay đổi màu nền khi chuột vào
         }
+
         private void picClose_MouseLeave(object sender, EventArgs e)
         {
-
+            picClose.BackColor = Color.Transparent; // Trở về màu nền ban đầu
         }
         #endregion
     }

@@ -1,4 +1,5 @@
 ﻿using GUI.Resources.Styles;
+using GUI.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,25 +14,18 @@ namespace GUI.UserControls.ControlBar
 {
     public partial class BaseForm : Form
     {
+        protected UControlBar controlBar;
         public BaseForm()
         {
             InitializeComponent();
-            InitializeForm();
+            InitializeControlBar();
+            DesignA();
         }
 
-
-        void InitializeForm()
+        private void InitializeControlBar()
         {
-            this.BackColor = ColorPalette.LightColor1;
-            this.ForeColor = ColorPalette.DarkColor1; 
-            this.Font = new Font("Georgia", 10, FontStyle.Regular);
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Height = 720;
-            this.Width = 1280;
-
             // Khởi tạo UControlBar
-            UControlBar controlBar = new UControlBar();
+            controlBar = new UControlBar();
 
             // Đăng ký các sự kiện
             controlBar.btnCloseClicked += ControlBar_btnCloseClicked;
@@ -45,10 +39,22 @@ namespace GUI.UserControls.ControlBar
             // Thiết lập giao diện
             controlBar.DesignA();
         }
+        private void DesignA()
+        {
+            this.Font = new Font("Georgia", 10, FontStyle.Regular);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Height = 720;
+            this.Width = 1280;
+        }
+        public void CallDesignA()
+        {
+            controlBar.DesignA(); // Gọi phương thức DesignA của UControlBar
+        }
 
         private void ControlBar_btnCloseClicked(object sender, EventArgs e)
         {
-            this.Close(); // Đóng form
+            Application.Exit();
         }
 
         private void ControlBar_btnMaximizeClicked(object sender, EventArgs e)
