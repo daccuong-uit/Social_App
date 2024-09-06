@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application">
+  <a href="https://github.com/daccuong-uit/Social_App">
     <img src="GUI/Assets/icons/ic_Facebook.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -12,14 +12,14 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/daccuong-uit/Social_App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application">View Demo</a>
+    <a href="https://github.com/daccuong-uit/Social_App">View Demo</a>
     ·
-    <a href="https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/daccuong-uit/Social_App/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/daccuong-uit/Social_App/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -98,7 +98,7 @@ Make sure you have the following software installed:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application.git
+   git clone https://github.com/daccuong-uit/Social_App.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +126,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/daccuong-uit/Social_App/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
@@ -161,7 +161,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Nguyen Dac Cuong - [@daccuong_ll](https://x.com/daccuong_ll)
 
-Project Link: [https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application](https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application)
+Project Link: [https://github.com/daccuong-uit/Social_App](https://github.com/daccuong-uit/Social_App)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,15 +188,15 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/graphs/contributors
+[contributors-url]: https://github.com/daccuong-uit/Social_App/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/network/members
+[forks-url]: https://github.com/daccuong-uit/Social_App/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/stargazers
+[stars-url]: https://github.com/daccuong-uit/Social_App/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/issues
+[issues-url]: https://github.com/daccuong-uit/Social_App/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/daccuong110320/Facebook_Messenger_Desktop_Application/blob/master/LICENSE.txt
+[license-url]: https://github.com/daccuong-uit/Social_App/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
