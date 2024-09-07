@@ -1,4 +1,5 @@
-﻿using GUI.Resources.Styles;
+﻿using BLL;
+using GUI.Resources.Styles;
 using GUI.Utilities;
 using System;
 using System.Collections.Generic;
@@ -14,18 +15,26 @@ namespace GUI.Forms.AccountManagement
 {
     public partial class ULogin : UserControl
     {
-        public event EventHandler btnUserClicked;
-        public event EventHandler btnPaswordClicked;
         public event EventHandler btnDarkmodeClicked;
         public event EventHandler btnForgotPasswordClicked;
+        public event EventHandler btnRegisterClicked;
         public ULogin()
         {
             InitializeComponent();
             ResetA();
         }
 
+        #region --> Design
         void ResetA()
         {
+            if (AppSettings.IsDarkMode)
+            {
+                cbtnDarkmode.Checked = true;
+            }
+            else
+            {
+                cbtnDarkmode.Checked = false;
+            }
             txtPassword.PasswordChar = '●';
         }
         private void txtUsername_TextChanged(object sender, EventArgs e)
@@ -38,7 +47,6 @@ namespace GUI.Forms.AccountManagement
             txtUsername.Focus();
             lblUsename.SendToBack();
             txtUsername.BringToFront();
-            btnUserClicked?.Invoke(this, EventArgs.Empty);
             borUserName.BorderColor = ColorTranslator.FromHtml("#1877F2");
         }
 
@@ -47,7 +55,6 @@ namespace GUI.Forms.AccountManagement
             txtUsername.Focus();
             lblUsename.SendToBack();
             txtUsername.BringToFront();
-            btnUserClicked?.Invoke(this, EventArgs.Empty);
             borUserName.BorderColor = ColorTranslator.FromHtml("#1877F2");
         }
 
@@ -56,7 +63,6 @@ namespace GUI.Forms.AccountManagement
             txtPassword.Focus();
             lblPassword.SendToBack();
             txtPassword.BringToFront();
-            btnPaswordClicked?.Invoke(this, EventArgs.Empty);
             borPassword.BorderColor = ColorTranslator.FromHtml("#1877F2");
         }
 
@@ -65,7 +71,6 @@ namespace GUI.Forms.AccountManagement
             txtPassword.Focus();
             lblPassword.SendToBack();
             txtPassword.BringToFront();
-            btnPaswordClicked?.Invoke(this, EventArgs.Empty);
             borPassword.BorderColor = ColorTranslator.FromHtml("#1877F2");
         }
 
@@ -75,6 +80,7 @@ namespace GUI.Forms.AccountManagement
             if (string.IsNullOrWhiteSpace(txtUsername.Text))
             {
                 lblUsename.BringToFront();
+                txtUsername.SendToBack();
             }
             borUserName.BorderColor = ColorPalette.LightColor2;
         }
@@ -124,6 +130,9 @@ namespace GUI.Forms.AccountManagement
             }
         }
 
+        #endregion
+
+        #region --> Appsettings
         private void cbtnDarkmode_CheckedChanged(object sender, EventArgs e)
         {
             // Kiểm tra trạng thái chế độ tối
@@ -142,10 +151,23 @@ namespace GUI.Forms.AccountManagement
             // Lưu cài đặt
             AppSettings.SaveSettings(); // Lưu cài đặt
         }
+        #endregion
 
         private void llblForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             btnForgotPasswordClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+            btnRegisterClicked?.Invoke(this, EventArgs.Empty);
+        }
+        // Login action
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string email = txtUsername.Text;
+            string password = txtPassword.Text;
         }
     }
 }

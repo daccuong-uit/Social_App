@@ -30,23 +30,18 @@
         {
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.lblUsename = new System.Windows.Forms.Label();
-            this.borUserName = new GUI.UserControls.DesignControls.BorderCustome();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pblPassword = new System.Windows.Forms.Panel();
             this.picEye = new System.Windows.Forms.PictureBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.borPassword = new GUI.UserControls.DesignControls.BorderCustome();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblFacebookIntro = new System.Windows.Forms.Label();
             this.lblFacebook = new System.Windows.Forms.Label();
-            this.btnSignUp = new GUI.Components.CustomButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.llblForgotPassword = new System.Windows.Forms.LinkLabel();
             this.line_ControlBar = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new GUI.Components.CustomButton();
-            this.borPanel = new GUI.UserControls.DesignControls.BorderCustome();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbtnDarkmode = new System.Windows.Forms.CheckBox();
             this.flpLanguae = new System.Windows.Forms.FlowLayoutPanel();
@@ -55,6 +50,11 @@
             this.llblFrance = new System.Windows.Forms.LinkLabel();
             this.llblSpain = new System.Windows.Forms.LinkLabel();
             this.llblChinese = new System.Windows.Forms.LinkLabel();
+            this.btnSignUp = new GUI.Components.CustomButton();
+            this.btnLogin = new GUI.Components.CustomButton();
+            this.borPassword = new GUI.UserControls.DesignControls.BorderCustome();
+            this.borUserName = new GUI.UserControls.DesignControls.BorderCustome();
+            this.borPanel = new GUI.UserControls.DesignControls.BorderCustome();
             this.pnlUsername.SuspendLayout();
             this.pblPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
@@ -91,21 +91,6 @@
             this.lblUsename.TabIndex = 1;
             this.lblUsename.Text = "Enter your email or username";
             this.lblUsename.Click += new System.EventHandler(this.lblUsename_Click);
-            // 
-            // borUserName
-            // 
-            this.borUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borUserName.BackColor = System.Drawing.Color.White;
-            this.borUserName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borUserName.BorderRadius = 10;
-            this.borUserName.BorderSize = 1;
-            this.borUserName.FillColor = System.Drawing.Color.White;
-            this.borUserName.Location = new System.Drawing.Point(0, 0);
-            this.borUserName.Name = "borUserName";
-            this.borUserName.Size = new System.Drawing.Size(300, 50);
-            this.borUserName.TabIndex = 0;
-            this.borUserName.Text = "borderCustome2";
-            this.borUserName.Click += new System.EventHandler(this.borUserName_Click);
             // 
             // txtUsername
             // 
@@ -162,21 +147,6 @@
             this.lblPassword.Text = "Password";
             this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
-            // borPassword
-            // 
-            this.borPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borPassword.BackColor = System.Drawing.Color.White;
-            this.borPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borPassword.BorderRadius = 10;
-            this.borPassword.BorderSize = 1;
-            this.borPassword.FillColor = System.Drawing.Color.White;
-            this.borPassword.Location = new System.Drawing.Point(0, 0);
-            this.borPassword.Name = "borPassword";
-            this.borPassword.Size = new System.Drawing.Size(300, 50);
-            this.borPassword.TabIndex = 0;
-            this.borPassword.Text = "borderCustome2";
-            this.borPassword.Click += new System.EventHandler(this.borderCustome2_Click);
-            // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -225,9 +195,9 @@
             this.lblFacebookIntro.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFacebookIntro.Location = new System.Drawing.Point(10, 80);
             this.lblFacebookIntro.Name = "lblFacebookIntro";
-            this.lblFacebookIntro.Size = new System.Drawing.Size(429, 58);
+            this.lblFacebookIntro.Size = new System.Drawing.Size(427, 58);
             this.lblFacebookIntro.TabIndex = 7;
-            this.lblFacebookIntro.Text = "Facebook giúp bạn kết nối và chia sẻ \r\nvới mọi người trong cuộc sống của bạn.";
+            this.lblFacebookIntro.Text = "Facebook helps you connect and share \r\nwith the people in your life.";
             // 
             // lblFacebook
             // 
@@ -239,26 +209,6 @@
             this.lblFacebook.Size = new System.Drawing.Size(345, 72);
             this.lblFacebook.TabIndex = 6;
             this.lblFacebook.Text = "Facebook";
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSignUp.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSignUp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSignUp.BorderRadius = 12;
-            this.btnSignUp.BorderSize = 0;
-            this.btnSignUp.FlatAppearance.BorderSize = 0;
-            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(810, 352);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(200, 50);
-            this.btnSignUp.TabIndex = 5;
-            this.btnSignUp.Text = "Sign up";
-            this.btnSignUp.TextColor = System.Drawing.Color.White;
-            this.btnSignUp.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -293,40 +243,6 @@
             this.line_ControlBar.Size = new System.Drawing.Size(300, 1);
             this.line_ControlBar.TabIndex = 4;
             this.line_ControlBar.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.btnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.btnLogin.BorderRadius = 12;
-            this.btnLogin.BorderSize = 0;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(760, 217);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(300, 50);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.TextColor = System.Drawing.Color.White;
-            this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // borPanel
-            // 
-            this.borPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.borPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borPanel.BorderRadius = 10;
-            this.borPanel.BorderSize = 2;
-            this.borPanel.FillColor = System.Drawing.Color.White;
-            this.borPanel.Location = new System.Drawing.Point(740, 80);
-            this.borPanel.Name = "borPanel";
-            this.borPanel.Size = new System.Drawing.Size(340, 348);
-            this.borPanel.TabIndex = 0;
-            this.borPanel.Text = "borderCustome1";
             // 
             // panel2
             // 
@@ -436,6 +352,92 @@
             this.llblChinese.TabIndex = 1;
             this.llblChinese.TabStop = true;
             this.llblChinese.Text = "Chinese";
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSignUp.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSignUp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSignUp.BorderRadius = 12;
+            this.btnSignUp.BorderSize = 0;
+            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(810, 352);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(200, 50);
+            this.btnSignUp.TabIndex = 5;
+            this.btnSignUp.Text = "Create new account";
+            this.btnSignUp.TextColor = System.Drawing.Color.White;
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.btnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.btnLogin.BorderRadius = 12;
+            this.btnLogin.BorderSize = 0;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(760, 217);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(300, 50);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.TextColor = System.Drawing.Color.White;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // borPassword
+            // 
+            this.borPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borPassword.BackColor = System.Drawing.Color.White;
+            this.borPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borPassword.BorderRadius = 10;
+            this.borPassword.BorderSize = 1;
+            this.borPassword.FillColor = System.Drawing.Color.White;
+            this.borPassword.Location = new System.Drawing.Point(0, 0);
+            this.borPassword.Name = "borPassword";
+            this.borPassword.Size = new System.Drawing.Size(300, 50);
+            this.borPassword.TabIndex = 0;
+            this.borPassword.Text = "borderCustome2";
+            this.borPassword.Click += new System.EventHandler(this.borderCustome2_Click);
+            // 
+            // borUserName
+            // 
+            this.borUserName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borUserName.BackColor = System.Drawing.Color.White;
+            this.borUserName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borUserName.BorderRadius = 10;
+            this.borUserName.BorderSize = 1;
+            this.borUserName.FillColor = System.Drawing.Color.White;
+            this.borUserName.Location = new System.Drawing.Point(0, 0);
+            this.borUserName.Name = "borUserName";
+            this.borUserName.Size = new System.Drawing.Size(300, 50);
+            this.borUserName.TabIndex = 0;
+            this.borUserName.Text = "borderCustome2";
+            this.borUserName.Click += new System.EventHandler(this.borUserName_Click);
+            // 
+            // borPanel
+            // 
+            this.borPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.borPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borPanel.BorderRadius = 10;
+            this.borPanel.BorderSize = 2;
+            this.borPanel.FillColor = System.Drawing.Color.White;
+            this.borPanel.Location = new System.Drawing.Point(740, 80);
+            this.borPanel.Name = "borPanel";
+            this.borPanel.Size = new System.Drawing.Size(340, 348);
+            this.borPanel.TabIndex = 0;
+            this.borPanel.Text = "borderCustome1";
             // 
             // ULogin
             // 

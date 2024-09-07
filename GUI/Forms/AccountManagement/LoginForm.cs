@@ -14,11 +14,13 @@ namespace GUI.Forms.AccountManagement
 {
     public partial class LoginForm : BaseForm
     {
+        private UserService _userService;
         public LoginForm()
         {
             InitializeComponent();
             DesignA();
 
+            _userService = new UserService();
         }
 
         private void ToggleDarkMode()
@@ -40,10 +42,9 @@ namespace GUI.Forms.AccountManagement
             pnlThemeScroll.Controls.Add(uLogin);
             uLogin.Location = new System.Drawing.Point(0, 0);
 
-            uLogin.btnUserClicked += ULogin_btnUserClicked;
-            uLogin.btnPaswordClicked += ULogin_btnPasswordClicked;
             uLogin.btnDarkmodeClicked += ULogin_btnDarkmodeClicked;
             uLogin.btnForgotPasswordClicked += ULogin_btnForgotPasswordClicked;
+            uLogin.btnRegisterClicked += ULogin_btnbtnRegisterClicked;
         }
 
         private void ULogin_btnUserClicked(object sender, EventArgs e)
@@ -58,6 +59,16 @@ namespace GUI.Forms.AccountManagement
         {
             ToggleDarkMode();
         }
+        private void ULogin_btnBackToLoginClicked(object sender, EventArgs e)
+        {
+            DesignA();
+        }
+        private void URegister_btnGoToMainFormClicked(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Close();
+        }
         private void ULogin_btnForgotPasswordClicked(object sender, EventArgs e)
         {
             AppSettings.ApplyTheme(this);
@@ -67,6 +78,18 @@ namespace GUI.Forms.AccountManagement
             uForgotPassword.Location = new System.Drawing.Point(0, 0);
 
             uForgotPassword.btnDarkmodeClicked += ULogin_btnDarkmodeClicked;
+            uForgotPassword.btnBackToLoginClicked += ULogin_btnBackToLoginClicked;
+        }
+        private void ULogin_btnbtnRegisterClicked(object sender, EventArgs e)
+        {
+            AppSettings.ApplyTheme(this);
+            pnlThemeScroll.Controls.Clear();
+            URegister uRegister = new URegister(_userService);
+            pnlThemeScroll.Controls.Add(uRegister);
+            uRegister.Location = new System.Drawing.Point(0, 0);
+
+            uRegister.btnGoToMainFormClicked += URegister_btnGoToMainFormClicked;
+            uRegister.btnDarkmodeClicked += ULogin_btnDarkmodeClicked;
         }
     }
 }

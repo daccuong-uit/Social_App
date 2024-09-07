@@ -44,6 +44,23 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlResetPass = new System.Windows.Forms.Panel();
+            this.customButton3 = new GUI.Components.CustomButton();
+            this.customButton4 = new GUI.Components.CustomButton();
+            this.lblResetPassTitle = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlCOnNewPass = new System.Windows.Forms.Panel();
+            this.lblNewpassAgain = new System.Windows.Forms.Label();
+            this.borderCustome5 = new GUI.UserControls.DesignControls.BorderCustome();
+            this.txtConNewpass = new System.Windows.Forms.TextBox();
+            this.pnlNewPassword = new System.Windows.Forms.Panel();
+            this.lnlNewpass = new System.Windows.Forms.Label();
+            this.borderCustome2 = new GUI.UserControls.DesignControls.BorderCustome();
+            this.txtNewpass = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.borderCustome4 = new GUI.UserControls.DesignControls.BorderCustome();
             this.pnlOTPCode = new System.Windows.Forms.Panel();
             this.btnNExtOtp = new GUI.Components.CustomButton();
             this.btnCancelOTP = new GUI.Components.CustomButton();
@@ -51,8 +68,8 @@
             this.lblOTPl = new System.Windows.Forms.Label();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.lblOTPEnter = new System.Windows.Forms.Label();
-            this.borOTP = new GUI.UserControls.DesignControls.BorderCustome();
             this.txtEnterOTP = new System.Windows.Forms.TextBox();
+            this.borOTP = new GUI.UserControls.DesignControls.BorderCustome();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -66,36 +83,24 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlUser = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
-            this.borderCustome1 = new GUI.UserControls.DesignControls.BorderCustome();
             this.txtUser = new System.Windows.Forms.TextBox();
+            this.borderCustome1 = new GUI.UserControls.DesignControls.BorderCustome();
             this.customButton2 = new GUI.Components.CustomButton();
             this.pblPassword = new System.Windows.Forms.Panel();
-            this.picEye = new System.Windows.Forms.PictureBox();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.picEye = new System.Windows.Forms.PictureBox();
             this.borPassword = new GUI.UserControls.DesignControls.BorderCustome();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.pnlResetPass = new System.Windows.Forms.Panel();
-            this.customButton3 = new GUI.Components.CustomButton();
-            this.customButton4 = new GUI.Components.CustomButton();
-            this.lblResetPassTitle = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnlNewPassword = new System.Windows.Forms.Panel();
-            this.lnlNewpass = new System.Windows.Forms.Label();
-            this.txtNewpass = new System.Windows.Forms.TextBox();
-            this.borderCustome2 = new GUI.UserControls.DesignControls.BorderCustome();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.borderCustome4 = new GUI.UserControls.DesignControls.BorderCustome();
-            this.pnlCOnNewPass = new System.Windows.Forms.Panel();
-            this.lblNewpassAgain = new System.Windows.Forms.Label();
-            this.txtConNewpass = new System.Windows.Forms.TextBox();
-            this.borderCustome5 = new GUI.UserControls.DesignControls.BorderCustome();
             this.flpLanguae.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.line_ControlBar)).BeginInit();
             this.pnlUsername.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnlResetPass.SuspendLayout();
+            this.pnlCOnNewPass.SuspendLayout();
+            this.pnlNewPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlOTPCode.SuspendLayout();
             this.pnlEmail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -106,11 +111,6 @@
             this.pnlUser.SuspendLayout();
             this.pblPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
-            this.pnlResetPass.SuspendLayout();
-            this.pnlNewPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.pnlCOnNewPass.SuspendLayout();
             this.SuspendLayout();
             // 
             // llblEnglish
@@ -251,6 +251,7 @@
             this.btnLogin.Text = "Search";
             this.btnLogin.TextColor = System.Drawing.Color.White;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // borPanel
             // 
@@ -279,6 +280,7 @@
             this.lblUsename.Size = new System.Drawing.Size(263, 23);
             this.lblUsename.TabIndex = 1;
             this.lblUsename.Text = "Enter your email or username";
+            this.lblUsename.Click += new System.EventHandler(this.lblUsename_Click);
             // 
             // borUserName
             // 
@@ -293,6 +295,7 @@
             this.borUserName.Size = new System.Drawing.Size(562, 50);
             this.borUserName.TabIndex = 0;
             this.borUserName.Text = "borderCustome2";
+            this.borUserName.Click += new System.EventHandler(this.borUserName_Click);
             // 
             // txtUsername
             // 
@@ -305,13 +308,14 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(503, 22);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
             // 
             // pnlUsername
             // 
             this.pnlUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlUsername.Controls.Add(this.lblUsename);
-            this.pnlUsername.Controls.Add(this.borUserName);
             this.pnlUsername.Controls.Add(this.txtUsername);
+            this.pnlUsername.Controls.Add(this.borUserName);
             this.pnlUsername.Location = new System.Drawing.Point(17, 175);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Size = new System.Drawing.Size(562, 50);
@@ -330,6 +334,243 @@
             this.panel1.Size = new System.Drawing.Size(1260, 620);
             this.panel1.TabIndex = 4;
             // 
+            // pnlResetPass
+            // 
+            this.pnlResetPass.Controls.Add(this.customButton3);
+            this.pnlResetPass.Controls.Add(this.customButton4);
+            this.pnlResetPass.Controls.Add(this.lblResetPassTitle);
+            this.pnlResetPass.Controls.Add(this.label4);
+            this.pnlResetPass.Controls.Add(this.pnlCOnNewPass);
+            this.pnlResetPass.Controls.Add(this.pnlNewPassword);
+            this.pnlResetPass.Controls.Add(this.label7);
+            this.pnlResetPass.Controls.Add(this.pictureBox4);
+            this.pnlResetPass.Controls.Add(this.pictureBox5);
+            this.pnlResetPass.Controls.Add(this.borderCustome4);
+            this.pnlResetPass.Location = new System.Drawing.Point(330, 150);
+            this.pnlResetPass.Name = "pnlResetPass";
+            this.pnlResetPass.Size = new System.Drawing.Size(600, 350);
+            this.pnlResetPass.TabIndex = 14;
+            this.pnlResetPass.Visible = false;
+            // 
+            // customButton3
+            // 
+            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.customButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.customButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
+            this.customButton3.BorderRadius = 20;
+            this.customButton3.BorderSize = 0;
+            this.customButton3.FlatAppearance.BorderSize = 0;
+            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton3.ForeColor = System.Drawing.Color.White;
+            this.customButton3.Location = new System.Drawing.Point(437, 283);
+            this.customButton3.Name = "customButton3";
+            this.customButton3.Size = new System.Drawing.Size(125, 50);
+            this.customButton3.TabIndex = 2;
+            this.customButton3.Text = "Reset";
+            this.customButton3.TextColor = System.Drawing.Color.White;
+            this.customButton3.UseVisualStyleBackColor = false;
+            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
+            // 
+            // customButton4
+            // 
+            this.customButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton4.BackColor = System.Drawing.Color.Gainsboro;
+            this.customButton4.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.customButton4.BorderColor = System.Drawing.Color.DimGray;
+            this.customButton4.BorderRadius = 20;
+            this.customButton4.BorderSize = 0;
+            this.customButton4.FlatAppearance.BorderSize = 0;
+            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton4.ForeColor = System.Drawing.Color.Black;
+            this.customButton4.Location = new System.Drawing.Point(294, 283);
+            this.customButton4.Name = "customButton4";
+            this.customButton4.Size = new System.Drawing.Size(125, 50);
+            this.customButton4.TabIndex = 2;
+            this.customButton4.Text = "Cancel";
+            this.customButton4.TextColor = System.Drawing.Color.Black;
+            this.customButton4.UseVisualStyleBackColor = false;
+            this.customButton4.Click += new System.EventHandler(this.customButton4_Click);
+            // 
+            // lblResetPassTitle
+            // 
+            this.lblResetPassTitle.AllowDrop = true;
+            this.lblResetPassTitle.AutoSize = true;
+            this.lblResetPassTitle.BackColor = System.Drawing.Color.White;
+            this.lblResetPassTitle.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResetPassTitle.Location = new System.Drawing.Point(12, 27);
+            this.lblResetPassTitle.Name = "lblResetPassTitle";
+            this.lblResetPassTitle.Size = new System.Drawing.Size(303, 31);
+            this.lblResetPassTitle.TabIndex = 12;
+            this.lblResetPassTitle.Text = "Reset your password";
+            // 
+            // label4
+            // 
+            this.label4.AllowDrop = true;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(259, 25);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Please enter new password";
+            // 
+            // pnlCOnNewPass
+            // 
+            this.pnlCOnNewPass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlCOnNewPass.Controls.Add(this.lblNewpassAgain);
+            this.pnlCOnNewPass.Controls.Add(this.borderCustome5);
+            this.pnlCOnNewPass.Controls.Add(this.txtConNewpass);
+            this.pnlCOnNewPass.Location = new System.Drawing.Point(18, 194);
+            this.pnlCOnNewPass.Name = "pnlCOnNewPass";
+            this.pnlCOnNewPass.Size = new System.Drawing.Size(562, 50);
+            this.pnlCOnNewPass.TabIndex = 1;
+            // 
+            // lblNewpassAgain
+            // 
+            this.lblNewpassAgain.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNewpassAgain.AutoSize = true;
+            this.lblNewpassAgain.BackColor = System.Drawing.Color.White;
+            this.lblNewpassAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblNewpassAgain.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewpassAgain.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNewpassAgain.Location = new System.Drawing.Point(15, 15);
+            this.lblNewpassAgain.Name = "lblNewpassAgain";
+            this.lblNewpassAgain.Size = new System.Drawing.Size(194, 23);
+            this.lblNewpassAgain.TabIndex = 1;
+            this.lblNewpassAgain.Text = "Enter password again";
+            this.lblNewpassAgain.Click += new System.EventHandler(this.lblNewpassAgain_Click);
+            // 
+            // borderCustome5
+            // 
+            this.borderCustome5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borderCustome5.BackColor = System.Drawing.Color.White;
+            this.borderCustome5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borderCustome5.BorderRadius = 10;
+            this.borderCustome5.BorderSize = 1;
+            this.borderCustome5.FillColor = System.Drawing.Color.White;
+            this.borderCustome5.Location = new System.Drawing.Point(0, 0);
+            this.borderCustome5.Name = "borderCustome5";
+            this.borderCustome5.Size = new System.Drawing.Size(562, 50);
+            this.borderCustome5.TabIndex = 0;
+            this.borderCustome5.Text = "borderCustome2";
+            this.borderCustome5.Click += new System.EventHandler(this.borderCustome5_Click);
+            // 
+            // txtConNewpass
+            // 
+            this.txtConNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtConNewpass.BackColor = System.Drawing.Color.White;
+            this.txtConNewpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConNewpass.ForeColor = System.Drawing.Color.Black;
+            this.txtConNewpass.Location = new System.Drawing.Point(19, 16);
+            this.txtConNewpass.Name = "txtConNewpass";
+            this.txtConNewpass.Size = new System.Drawing.Size(503, 22);
+            this.txtConNewpass.TabIndex = 2;
+            this.txtConNewpass.Leave += new System.EventHandler(this.txtConNewpass_Leave);
+            // 
+            // pnlNewPassword
+            // 
+            this.pnlNewPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlNewPassword.Controls.Add(this.lnlNewpass);
+            this.pnlNewPassword.Controls.Add(this.borderCustome2);
+            this.pnlNewPassword.Controls.Add(this.txtNewpass);
+            this.pnlNewPassword.Location = new System.Drawing.Point(18, 130);
+            this.pnlNewPassword.Name = "pnlNewPassword";
+            this.pnlNewPassword.Size = new System.Drawing.Size(562, 50);
+            this.pnlNewPassword.TabIndex = 1;
+            // 
+            // lnlNewpass
+            // 
+            this.lnlNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lnlNewpass.AutoSize = true;
+            this.lnlNewpass.BackColor = System.Drawing.Color.White;
+            this.lnlNewpass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lnlNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnlNewpass.ForeColor = System.Drawing.Color.DimGray;
+            this.lnlNewpass.Location = new System.Drawing.Point(15, 15);
+            this.lnlNewpass.Name = "lnlNewpass";
+            this.lnlNewpass.Size = new System.Drawing.Size(224, 23);
+            this.lnlNewpass.TabIndex = 1;
+            this.lnlNewpass.Text = "Enter your new password";
+            this.lnlNewpass.Click += new System.EventHandler(this.lnlNewpass_Click);
+            // 
+            // borderCustome2
+            // 
+            this.borderCustome2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borderCustome2.BackColor = System.Drawing.Color.White;
+            this.borderCustome2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borderCustome2.BorderRadius = 10;
+            this.borderCustome2.BorderSize = 1;
+            this.borderCustome2.FillColor = System.Drawing.Color.White;
+            this.borderCustome2.Location = new System.Drawing.Point(0, 0);
+            this.borderCustome2.Name = "borderCustome2";
+            this.borderCustome2.Size = new System.Drawing.Size(562, 50);
+            this.borderCustome2.TabIndex = 0;
+            this.borderCustome2.Text = "borderCustome2";
+            this.borderCustome2.Click += new System.EventHandler(this.borderCustome2_Click);
+            // 
+            // txtNewpass
+            // 
+            this.txtNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNewpass.BackColor = System.Drawing.Color.White;
+            this.txtNewpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewpass.ForeColor = System.Drawing.Color.Black;
+            this.txtNewpass.Location = new System.Drawing.Point(19, 16);
+            this.txtNewpass.Name = "txtNewpass";
+            this.txtNewpass.Size = new System.Drawing.Size(503, 22);
+            this.txtNewpass.TabIndex = 2;
+            this.txtNewpass.Leave += new System.EventHandler(this.txtNewpass_Leave);
+            // 
+            // label7
+            // 
+            this.label7.AllowDrop = true;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(-6, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 31);
+            this.label7.TabIndex = 10;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 80);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(600, 1);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.pictureBox5.Location = new System.Drawing.Point(0, 265);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(600, 1);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // borderCustome4
+            // 
+            this.borderCustome4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.borderCustome4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.borderCustome4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
+            this.borderCustome4.BorderRadius = 10;
+            this.borderCustome4.BorderSize = 2;
+            this.borderCustome4.FillColor = System.Drawing.Color.White;
+            this.borderCustome4.Location = new System.Drawing.Point(0, 0);
+            this.borderCustome4.Name = "borderCustome4";
+            this.borderCustome4.Size = new System.Drawing.Size(600, 350);
+            this.borderCustome4.TabIndex = 0;
+            this.borderCustome4.Text = "borderCustome1";
+            // 
             // pnlOTPCode
             // 
             this.pnlOTPCode.Controls.Add(this.btnNExtOtp);
@@ -341,10 +582,11 @@
             this.pnlOTPCode.Controls.Add(this.pictureBox2);
             this.pnlOTPCode.Controls.Add(this.pictureBox3);
             this.pnlOTPCode.Controls.Add(this.borderCustome3);
-            this.pnlOTPCode.Location = new System.Drawing.Point(389, 109);
+            this.pnlOTPCode.Location = new System.Drawing.Point(330, 150);
             this.pnlOTPCode.Name = "pnlOTPCode";
             this.pnlOTPCode.Size = new System.Drawing.Size(600, 350);
             this.pnlOTPCode.TabIndex = 13;
+            this.pnlOTPCode.Visible = false;
             // 
             // btnNExtOtp
             // 
@@ -365,6 +607,7 @@
             this.btnNExtOtp.Text = "Next";
             this.btnNExtOtp.TextColor = System.Drawing.Color.White;
             this.btnNExtOtp.UseVisualStyleBackColor = false;
+            this.btnNExtOtp.Click += new System.EventHandler(this.btnNExtOtp_Click);
             // 
             // btnCancelOTP
             // 
@@ -385,6 +628,7 @@
             this.btnCancelOTP.Text = "Cancel";
             this.btnCancelOTP.TextColor = System.Drawing.Color.Black;
             this.btnCancelOTP.UseVisualStyleBackColor = false;
+            this.btnCancelOTP.Click += new System.EventHandler(this.btnCancelOTP_Click);
             // 
             // lblOTP
             // 
@@ -434,6 +678,20 @@
             this.lblOTPEnter.Size = new System.Drawing.Size(187, 23);
             this.lblOTPEnter.TabIndex = 1;
             this.lblOTPEnter.Text = "Enter your OTP code";
+            this.lblOTPEnter.Click += new System.EventHandler(this.lblOTPEnter_Click);
+            // 
+            // txtEnterOTP
+            // 
+            this.txtEnterOTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEnterOTP.BackColor = System.Drawing.Color.White;
+            this.txtEnterOTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnterOTP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnterOTP.ForeColor = System.Drawing.Color.Black;
+            this.txtEnterOTP.Location = new System.Drawing.Point(19, 16);
+            this.txtEnterOTP.Name = "txtEnterOTP";
+            this.txtEnterOTP.Size = new System.Drawing.Size(503, 22);
+            this.txtEnterOTP.TabIndex = 2;
+            this.txtEnterOTP.Leave += new System.EventHandler(this.txtEnterOTP_Leave);
             // 
             // borOTP
             // 
@@ -448,18 +706,7 @@
             this.borOTP.Size = new System.Drawing.Size(562, 50);
             this.borOTP.TabIndex = 0;
             this.borOTP.Text = "borderCustome2";
-            // 
-            // txtEnterOTP
-            // 
-            this.txtEnterOTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEnterOTP.BackColor = System.Drawing.Color.White;
-            this.txtEnterOTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEnterOTP.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnterOTP.ForeColor = System.Drawing.Color.Black;
-            this.txtEnterOTP.Location = new System.Drawing.Point(19, 16);
-            this.txtEnterOTP.Name = "txtEnterOTP";
-            this.txtEnterOTP.Size = new System.Drawing.Size(503, 22);
-            this.txtEnterOTP.TabIndex = 2;
+            this.borOTP.Click += new System.EventHandler(this.borOTP_Click);
             // 
             // label5
             // 
@@ -574,6 +821,7 @@
             this.customButton1.Text = "Cancel";
             this.customButton1.TextColor = System.Drawing.Color.Black;
             this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // lblFacebookIntro
             // 
@@ -603,9 +851,9 @@
             // 
             this.pnlUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlUser.Controls.Add(this.lblUser);
-            this.pnlUser.Controls.Add(this.borderCustome1);
             this.pnlUser.Controls.Add(this.txtUser);
-            this.pnlUser.Location = new System.Drawing.Point(514, 3);
+            this.pnlUser.Controls.Add(this.borderCustome1);
+            this.pnlUser.Location = new System.Drawing.Point(510, 5);
             this.pnlUser.Name = "pnlUser";
             this.pnlUser.Size = new System.Drawing.Size(300, 50);
             this.pnlUser.TabIndex = 13;
@@ -618,11 +866,26 @@
             this.lblUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblUser.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.DimGray;
-            this.lblUser.Location = new System.Drawing.Point(15, 15);
+            this.lblUser.Location = new System.Drawing.Point(15, 13);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(263, 23);
             this.lblUser.TabIndex = 1;
             this.lblUser.Text = "Enter your email or username";
+            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
+            // 
+            // txtUser
+            // 
+            this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUser.BackColor = System.Drawing.Color.White;
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.ForeColor = System.Drawing.Color.Black;
+            this.txtUser.Location = new System.Drawing.Point(18, 15);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(259, 22);
+            this.txtUser.TabIndex = 2;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
+            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // borderCustome1
             // 
@@ -637,18 +900,7 @@
             this.borderCustome1.Size = new System.Drawing.Size(300, 50);
             this.borderCustome1.TabIndex = 0;
             this.borderCustome1.Text = "borderCustome2";
-            // 
-            // txtUser
-            // 
-            this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUser.BackColor = System.Drawing.Color.White;
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUser.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.ForeColor = System.Drawing.Color.Black;
-            this.txtUser.Location = new System.Drawing.Point(18, 16);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(259, 22);
-            this.txtUser.TabIndex = 2;
+            this.borderCustome1.Click += new System.EventHandler(this.borderCustome1_Click);
             // 
             // customButton2
             // 
@@ -669,31 +921,20 @@
             this.customButton2.Text = "Log in";
             this.customButton2.TextColor = System.Drawing.Color.White;
             this.customButton2.UseVisualStyleBackColor = false;
+            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
             // 
             // pblPassword
             // 
             this.pblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.pblPassword.Controls.Add(this.picEye);
             this.pblPassword.Controls.Add(this.lblPassword);
+            this.pblPassword.Controls.Add(this.picEye);
             this.pblPassword.Controls.Add(this.borPassword);
             this.pblPassword.Controls.Add(this.txtPassword);
             this.pblPassword.Location = new System.Drawing.Point(820, 5);
             this.pblPassword.Name = "pblPassword";
             this.pblPassword.Size = new System.Drawing.Size(300, 50);
             this.pblPassword.TabIndex = 1;
-            // 
-            // picEye
-            // 
-            this.picEye.Image = global::GUI.Properties.Resources.eye_24_black;
-            this.picEye.Location = new System.Drawing.Point(270, 12);
-            this.picEye.Name = "picEye";
-            this.picEye.Size = new System.Drawing.Size(24, 24);
-            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEye.TabIndex = 8;
-            this.picEye.TabStop = false;
-            this.picEye.Tag = "1";
-            this.picEye.Visible = false;
             // 
             // lblPassword
             // 
@@ -708,6 +949,20 @@
             this.lblPassword.Size = new System.Drawing.Size(91, 23);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
+            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
+            // 
+            // picEye
+            // 
+            this.picEye.Image = global::GUI.Properties.Resources.eye_24_black;
+            this.picEye.Location = new System.Drawing.Point(270, 12);
+            this.picEye.Name = "picEye";
+            this.picEye.Size = new System.Drawing.Size(24, 24);
+            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picEye.TabIndex = 8;
+            this.picEye.TabStop = false;
+            this.picEye.Tag = "1";
+            this.picEye.Visible = false;
+            this.picEye.Click += new System.EventHandler(this.picEye_Click);
             // 
             // borPassword
             // 
@@ -722,6 +977,7 @@
             this.borPassword.Size = new System.Drawing.Size(300, 50);
             this.borPassword.TabIndex = 0;
             this.borPassword.Text = "borderCustome2";
+            this.borPassword.Click += new System.EventHandler(this.borPassword_Click);
             // 
             // txtPassword
             // 
@@ -730,238 +986,12 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(16, 13);
+            this.txtPassword.Location = new System.Drawing.Point(16, 15);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(248, 22);
             this.txtPassword.TabIndex = 2;
-            // 
-            // pnlResetPass
-            // 
-            this.pnlResetPass.Controls.Add(this.customButton3);
-            this.pnlResetPass.Controls.Add(this.customButton4);
-            this.pnlResetPass.Controls.Add(this.lblResetPassTitle);
-            this.pnlResetPass.Controls.Add(this.label4);
-            this.pnlResetPass.Controls.Add(this.pnlCOnNewPass);
-            this.pnlResetPass.Controls.Add(this.pnlNewPassword);
-            this.pnlResetPass.Controls.Add(this.label7);
-            this.pnlResetPass.Controls.Add(this.pictureBox4);
-            this.pnlResetPass.Controls.Add(this.pictureBox5);
-            this.pnlResetPass.Controls.Add(this.borderCustome4);
-            this.pnlResetPass.Location = new System.Drawing.Point(484, 66);
-            this.pnlResetPass.Name = "pnlResetPass";
-            this.pnlResetPass.Size = new System.Drawing.Size(600, 350);
-            this.pnlResetPass.TabIndex = 14;
-            // 
-            // customButton3
-            // 
-            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.customButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.customButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(119)))), ((int)(((byte)(242)))));
-            this.customButton3.BorderRadius = 20;
-            this.customButton3.BorderSize = 0;
-            this.customButton3.FlatAppearance.BorderSize = 0;
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(437, 283);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(125, 50);
-            this.customButton3.TabIndex = 2;
-            this.customButton3.Text = "Reset";
-            this.customButton3.TextColor = System.Drawing.Color.White;
-            this.customButton3.UseVisualStyleBackColor = false;
-            // 
-            // customButton4
-            // 
-            this.customButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton4.BackColor = System.Drawing.Color.Gainsboro;
-            this.customButton4.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.customButton4.BorderColor = System.Drawing.Color.DimGray;
-            this.customButton4.BorderRadius = 20;
-            this.customButton4.BorderSize = 0;
-            this.customButton4.FlatAppearance.BorderSize = 0;
-            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton4.ForeColor = System.Drawing.Color.Black;
-            this.customButton4.Location = new System.Drawing.Point(294, 283);
-            this.customButton4.Name = "customButton4";
-            this.customButton4.Size = new System.Drawing.Size(125, 50);
-            this.customButton4.TabIndex = 2;
-            this.customButton4.Text = "Cancel";
-            this.customButton4.TextColor = System.Drawing.Color.Black;
-            this.customButton4.UseVisualStyleBackColor = false;
-            // 
-            // lblResetPassTitle
-            // 
-            this.lblResetPassTitle.AllowDrop = true;
-            this.lblResetPassTitle.AutoSize = true;
-            this.lblResetPassTitle.BackColor = System.Drawing.Color.White;
-            this.lblResetPassTitle.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResetPassTitle.Location = new System.Drawing.Point(12, 27);
-            this.lblResetPassTitle.Name = "lblResetPassTitle";
-            this.lblResetPassTitle.Size = new System.Drawing.Size(303, 31);
-            this.lblResetPassTitle.TabIndex = 12;
-            this.lblResetPassTitle.Text = "Reset your password";
-            // 
-            // label4
-            // 
-            this.label4.AllowDrop = true;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(259, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Please enter new password";
-            // 
-            // pnlNewPassword
-            // 
-            this.pnlNewPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlNewPassword.Controls.Add(this.lnlNewpass);
-            this.pnlNewPassword.Controls.Add(this.borderCustome2);
-            this.pnlNewPassword.Controls.Add(this.txtNewpass);
-            this.pnlNewPassword.Location = new System.Drawing.Point(18, 130);
-            this.pnlNewPassword.Name = "pnlNewPassword";
-            this.pnlNewPassword.Size = new System.Drawing.Size(562, 50);
-            this.pnlNewPassword.TabIndex = 1;
-            // 
-            // lnlNewpass
-            // 
-            this.lnlNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lnlNewpass.AutoSize = true;
-            this.lnlNewpass.BackColor = System.Drawing.Color.White;
-            this.lnlNewpass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lnlNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnlNewpass.ForeColor = System.Drawing.Color.DimGray;
-            this.lnlNewpass.Location = new System.Drawing.Point(15, 15);
-            this.lnlNewpass.Name = "lnlNewpass";
-            this.lnlNewpass.Size = new System.Drawing.Size(224, 23);
-            this.lnlNewpass.TabIndex = 1;
-            this.lnlNewpass.Text = "Enter your new password";
-            // 
-            // txtNewpass
-            // 
-            this.txtNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNewpass.BackColor = System.Drawing.Color.White;
-            this.txtNewpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewpass.ForeColor = System.Drawing.Color.Black;
-            this.txtNewpass.Location = new System.Drawing.Point(19, 16);
-            this.txtNewpass.Name = "txtNewpass";
-            this.txtNewpass.Size = new System.Drawing.Size(503, 22);
-            this.txtNewpass.TabIndex = 2;
-            // 
-            // borderCustome2
-            // 
-            this.borderCustome2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borderCustome2.BackColor = System.Drawing.Color.White;
-            this.borderCustome2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borderCustome2.BorderRadius = 10;
-            this.borderCustome2.BorderSize = 1;
-            this.borderCustome2.FillColor = System.Drawing.Color.White;
-            this.borderCustome2.Location = new System.Drawing.Point(0, 0);
-            this.borderCustome2.Name = "borderCustome2";
-            this.borderCustome2.Size = new System.Drawing.Size(562, 50);
-            this.borderCustome2.TabIndex = 0;
-            this.borderCustome2.Text = "borderCustome2";
-            // 
-            // label7
-            // 
-            this.label7.AllowDrop = true;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(-6, 27);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 31);
-            this.label7.TabIndex = 10;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 80);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(600, 1);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 265);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(600, 1);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // borderCustome4
-            // 
-            this.borderCustome4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borderCustome4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.borderCustome4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borderCustome4.BorderRadius = 10;
-            this.borderCustome4.BorderSize = 2;
-            this.borderCustome4.FillColor = System.Drawing.Color.White;
-            this.borderCustome4.Location = new System.Drawing.Point(0, 0);
-            this.borderCustome4.Name = "borderCustome4";
-            this.borderCustome4.Size = new System.Drawing.Size(600, 350);
-            this.borderCustome4.TabIndex = 0;
-            this.borderCustome4.Text = "borderCustome1";
-            // 
-            // pnlCOnNewPass
-            // 
-            this.pnlCOnNewPass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlCOnNewPass.Controls.Add(this.lblNewpassAgain);
-            this.pnlCOnNewPass.Controls.Add(this.borderCustome5);
-            this.pnlCOnNewPass.Controls.Add(this.txtConNewpass);
-            this.pnlCOnNewPass.Location = new System.Drawing.Point(18, 194);
-            this.pnlCOnNewPass.Name = "pnlCOnNewPass";
-            this.pnlCOnNewPass.Size = new System.Drawing.Size(562, 50);
-            this.pnlCOnNewPass.TabIndex = 1;
-            // 
-            // lblNewpassAgain
-            // 
-            this.lblNewpassAgain.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblNewpassAgain.AutoSize = true;
-            this.lblNewpassAgain.BackColor = System.Drawing.Color.White;
-            this.lblNewpassAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblNewpassAgain.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewpassAgain.ForeColor = System.Drawing.Color.DimGray;
-            this.lblNewpassAgain.Location = new System.Drawing.Point(15, 15);
-            this.lblNewpassAgain.Name = "lblNewpassAgain";
-            this.lblNewpassAgain.Size = new System.Drawing.Size(194, 23);
-            this.lblNewpassAgain.TabIndex = 1;
-            this.lblNewpassAgain.Text = "Enter password again";
-            // 
-            // txtConNewpass
-            // 
-            this.txtConNewpass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtConNewpass.BackColor = System.Drawing.Color.White;
-            this.txtConNewpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConNewpass.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConNewpass.ForeColor = System.Drawing.Color.Black;
-            this.txtConNewpass.Location = new System.Drawing.Point(19, 16);
-            this.txtConNewpass.Name = "txtConNewpass";
-            this.txtConNewpass.Size = new System.Drawing.Size(503, 22);
-            this.txtConNewpass.TabIndex = 2;
-            // 
-            // borderCustome5
-            // 
-            this.borderCustome5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.borderCustome5.BackColor = System.Drawing.Color.White;
-            this.borderCustome5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(179)))), ((int)(((byte)(184)))));
-            this.borderCustome5.BorderRadius = 10;
-            this.borderCustome5.BorderSize = 1;
-            this.borderCustome5.FillColor = System.Drawing.Color.White;
-            this.borderCustome5.Location = new System.Drawing.Point(0, 0);
-            this.borderCustome5.Name = "borderCustome5";
-            this.borderCustome5.Size = new System.Drawing.Size(562, 50);
-            this.borderCustome5.TabIndex = 0;
-            this.borderCustome5.Text = "borderCustome2";
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // UForgotPassword
             // 
@@ -984,6 +1014,14 @@
             this.pnlUsername.ResumeLayout(false);
             this.pnlUsername.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.pnlResetPass.ResumeLayout(false);
+            this.pnlResetPass.PerformLayout();
+            this.pnlCOnNewPass.ResumeLayout(false);
+            this.pnlCOnNewPass.PerformLayout();
+            this.pnlNewPassword.ResumeLayout(false);
+            this.pnlNewPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlOTPCode.ResumeLayout(false);
             this.pnlOTPCode.PerformLayout();
             this.pnlEmail.ResumeLayout(false);
@@ -999,14 +1037,6 @@
             this.pblPassword.ResumeLayout(false);
             this.pblPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
-            this.pnlResetPass.ResumeLayout(false);
-            this.pnlResetPass.PerformLayout();
-            this.pnlNewPassword.ResumeLayout(false);
-            this.pnlNewPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.pnlCOnNewPass.ResumeLayout(false);
-            this.pnlCOnNewPass.PerformLayout();
             this.ResumeLayout(false);
 
         }
