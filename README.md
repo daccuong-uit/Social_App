@@ -115,21 +115,30 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 -->
 
 
-<!-- ROADMAP
+<!-- ROADMAP-->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [x] Database design
+- [ ] Front-end
+  - [x ] Login, Register, Forgot password
+  - [ ] Profile
+  - [ ] Posts main
+  - [ ] Group friends
+  - [ ] Notifications
+  - [ ] Reels
+  - [ ] Chat room
+- [ ] Back-end
+  - [ ] CRUD
+  - [ ] Sort, Filter, Search
+- [ ] Darkmode Support
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+    - [ ] Vietnamese
+    - [ ] French
 
 See the [open issues](https://github.com/daccuong-uit/Social_App/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
+
 
 
 <!-- CONTRIBUTING
